@@ -33,7 +33,7 @@ public class  StartApplication implements CommandLineRunner {
         book2.setISBN("2");
         Book book3 = new Book("Python");
         book3.setISBN("3");
-
+        bookRepository.save(book1);
         System.out.println("\nfindAll()");
         bookRepository.findAll().forEach(System.out::println);
 
